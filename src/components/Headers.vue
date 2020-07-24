@@ -69,7 +69,7 @@
           </li>
 
           <li v-if="!loggedIn">
-            <a href="/login">Login</a>
+            <router-link to="/login">Blog</router-link>
           </li>
           <li v-if="loggedIn">
             <a href="/logout">Logout</a>
