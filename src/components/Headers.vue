@@ -15,7 +15,7 @@
         </router-link>
       </h6>
 
-      <nav class="nav-menu d-none d-lg-block">
+      <nav class="nav-menu d-lg-block">
         <ul>
           <li class="active">
             <router-link to="/home">Home</router-link>
