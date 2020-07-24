@@ -10,7 +10,7 @@
           <h2>Create Article</h2>
           <ol>
             <li>
-              <a href="index.html">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>Article</li>
           </ol>
@@ -28,7 +28,7 @@
     <section id="team">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <form @submit.prevent="sendFile" enctype="multipart/form-data">
               <div class="form-group col-md-12">
                 <label for="exampleInputEmail">Article Title</label>
@@ -94,7 +94,7 @@
               </div>
             </form>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h3>Please Note</h3>
             <p>Downloadable materials should carry a list of every material available to the buyer on purchase, it is neccessary that these materials are stated clearly to avoid negative reviews from unsatisfied customers.</p>
             <p>Tags are keywords which users will use to search for products in any category of their choice, it is essential that you fill out tag area properly to optimize SEO. Tags should be seperated with a comma.</p>
@@ -157,11 +157,11 @@ export default {
       this.file = this.$refs.file.files[0];
     },
     async sendFile() {
-      if (this.title.length > 15) {
+      if (this.title.length > 21) {
         this.errors.push("Title should have a maximum of eight words");
-      } else if (this.intro.length > 40 || this.intro.length < 40) {
+      } else if (this.intro.length > 50 || this.intro.length < 40) {
         this.errors.push(
-          "Intro should have a minimum of 40 and a maximum of 65 letters"
+          "Intro should have a minimum of 40 and a maximum of 50 letters"
         );
       } else {
         const formData = new FormData();

@@ -1,7 +1,7 @@
 /* eslint-disable */
 <template>
 <body>
-  <Headers/>
+  <Headers />
   <section id="hero">
     <img class="card-img-top" src="../assets/img/slide/slide-2.jpg" alt="Card image cap" />
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -23,60 +23,65 @@
               <br />
               <p>what intrests you?</p>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Science</router-link>
+                <router-link :to="{name: 'category', params: {category: science}}">Science</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Technology</router-link>
+                <router-link :to="{name: 'category', params: {category: technology}}">Technology</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Art</router-link>
+                <router-link :to="{name: 'category', params: {category: art}}">Art</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Inspiration</router-link>
+                <router-link :to="{name: 'category', params: {category: spiritual}}">Inspirational</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Spiritual growth</router-link>
+                <router-link
+                  :to="{name: 'category', params: {category: spiritual}}"
+                >Spiritual growth</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Trending</router-link>
+                <router-link :to="{name: 'category', params: {category: trending}}">Trending</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Business</router-link>
+                <router-link :to="{name: 'category', params: {category: business}}">Business</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Health</router-link>
+                <router-link :to="{name: 'category', params: {category: science}}">Health</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Nature</router-link>
+                <router-link :to="{name: 'category', params: {category: science}}">Nature</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Society</router-link>
+                <router-link :to="{name: 'category', params: {category: technology}}">Society</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Humanity</router-link>
+                <router-link :to="{name: 'category', params: {category: art}}">Humanity</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Communication</router-link>
+                <router-link :to="{name: 'category', params: {category: innovation}}">Communication</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Environment</router-link>
-              </button>
-               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Personal growth</router-link>
+                <router-link :to="{name: 'category', params: {category: art}}">Environment</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Development</router-link>
+                <router-link :to="{name: 'category', params: {category: education}}">Personal Growth</router-link>
               </button>
               <button type="button" class="btn btn-default btn-rounded">
-                <router-link to="/contact">Design</router-link>
+                <router-link :to="{name: 'category', params: {category: education}}">Development</router-link>
+              </button>
+              <button type="button" class="btn btn-default btn-rounded">
+                <router-link :to="{name: 'category', params: {category: innovation}}">Design</router-link>
               </button>
               <br />
               <br />
               <a
-                href="#about"
+                href="/about"
                 class="btn-get-started animate__animated animate__fadeInUp scrollto"
               >Read More</a>
-              <p>Already have an account? Sign in to view your inbox</p>
+              <p>
+                Already have an account?
+                <a href="/login">Sign in</a> to view your inbox
+              </p>
             </div>
           </div>
         </div>
@@ -88,7 +93,7 @@
               <h2>Lorem Ipsum Dolor</h2>
               <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
               <div class="text-center">
-                <a href class="btn-get-started">Read More</a>
+                <a href="/about" class="btn-get-started">Read More</a>
               </div>
             </div>
           </div>
@@ -135,7 +140,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <img
@@ -151,7 +156,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <img
@@ -167,7 +172,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <img
@@ -191,13 +196,13 @@
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt />
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" data-aos="fade-right">
+            <img src="../assets/img/slide/slide-2.jpg" class="img-fluid" alt />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <h2>The Art Of Finding</h2>
             <p>
-              Providing carrier mentorship and technology support for youths by educating the youths and teenagers 
+              Providing carrier mentorship and technology support for youths by educating the youths and teenagers
               through content creation, trainings and empowerment programs is finding light!
             </p>
             <ul>
@@ -213,7 +218,7 @@
             </ul>
           </div>
           <p class="font-italic">
-            The Light Nigeria provides ethical standard in leadership, mentoring, education and politics through historical teaching, anti-corruption campaign and 
+            The Light Nigeria provides ethical standard in leadership, mentoring, education and politics through historical teaching, anti-corruption campaign and
             Sustainable Development Goals (SDGs)
           </p>
         </div>
@@ -232,10 +237,12 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
-               <p class="small"><span class="badge badge-danger">Racisim</span></p>
+                <p class="small">
+                  <span class="badge badge-danger">Racisim</span>
+                </p>
                 <img
                   class="card-img-top"
                   src="../assets/img/portfolio/portfolio-3.jpg"
@@ -245,20 +252,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="card h-100">
-                <p class="small">Designed by:</p>
-                <img
-                  class="card-img-top"
-                  src="../assets/img/portfolio/portfolio-3.jpg"
-                  alt="Card image cap"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -271,7 +265,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -284,7 +278,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -297,7 +291,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -310,10 +304,10 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
-               <p class="small"><span class="badge badge-danger">Pandemic</span></p>
+                <p class="small">Designed by:</p>
                 <img
                   class="card-img-top"
                   src="../assets/img/portfolio/portfolio-3.jpg"
@@ -323,7 +317,22 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="card h-100">
+                <p class="small">
+                  <span class="badge badge-danger">Pandemic</span>
+                </p>
+                <img
+                  class="card-img-top"
+                  src="../assets/img/portfolio/portfolio-3.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -351,7 +360,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -364,7 +373,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -377,7 +386,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -390,7 +399,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -403,7 +412,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -416,7 +425,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -429,7 +438,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -442,7 +451,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -463,11 +472,13 @@
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt />
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" data-aos="fade-right">
+            <img src="../assets/img/slide/slide-1.jpg" class="img-fluid" alt />
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <h3><strong>HOW WE CAN BUILD BACK, TOGETHER, BETTER</strong></h3>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-4 pt-lg-0" data-aos="fade-left">
+            <h3>
+              <strong>HOW WE CAN BUILD BACK, TOGETHER, BETTER</strong>
+            </h3>
             <p>
               The five pillars of The Light Nigeria (TLN) is centered about leadership, mentorship and empowerment.
               Building back is nice, but building back together is better! Building back together is not possible with our core pillars
@@ -511,10 +522,12 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
-                <p class="small"><span class="badge badge-danger">feed your curiosity</span></p>
+                <p class="small">
+                  <span class="badge badge-danger">feed your curiosity</span>
+                </p>
                 <img
                   class="card-img-top"
                   src="../assets/img/portfolio/portfolio-3.jpg"
@@ -524,7 +537,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -537,7 +550,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -550,7 +563,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -563,7 +576,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -576,7 +589,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
                 <p class="small">Designed by:</p>
@@ -589,10 +602,12 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="card h-100">
-               <p class="small"><span class="badge badge-danger">Editor's Note</span></p>
+                <p class="small">
+                  <span class="badge badge-danger">Editor's Note</span>
+                </p>
                 <img
                   class="card-img-top"
                   src="../assets/img/portfolio/portfolio-3.jpg"
@@ -618,22 +633,32 @@
       </div>
     </section>
     <!-- End Services Section -->
-
-    
   </main>
   <!-- End #main -->
 
-  <footers/>
+  <footers />
 </body>
 </template>
 
 <script>
-import Headers from "../components/Headers"
-import footers from "../components/footers"
+import Headers from "../components/Headers";
+import footers from "../components/footers";
 export default {
-  components:{
+  components: {
     Headers,
     footers
+  },
+  data() {
+    return {
+      science: "science",
+      technology: "technology",
+      art: "art",
+      innovation: "innovation",
+      trending: "trending",
+      business: "business",
+      spiritual: "spiritual",
+      educational: "educational"
+    };
   }
-}
+};
 </script>

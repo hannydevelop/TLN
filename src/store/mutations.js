@@ -19,6 +19,10 @@ export const SET_ARTICLES = (state, articles) => {
   state.articles = articles
 }
 
+export const SET_COMMENTS = (state, comments) => {
+  state.comments = comments
+}
+
 export const SET_TALKS = (state, talks) => {
   state.talks = talks
 }

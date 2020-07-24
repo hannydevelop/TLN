@@ -10,7 +10,7 @@
           <h2>Blog</h2>
           <ol>
             <li>
-              <a href="index.html">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>Blog</li>
           </ol>
@@ -23,160 +23,14 @@
     <section id="blog" class="blog" v-if="article">
       <div class="container">
         <div class="sidebar" data-aos="fade-left">
-          <div class="row">
-            <div class="col-lg-4">
-              <h3 class="sidebar-title">Search</h3>
-              <div class="sidebar-item search-form">
-                <form action>
-                  <input type="text" />
-                  <button type="submit">
-                    <i class="icofont-search"></i>
-                  </button>
-                </form>
-              </div>
-              <!-- End sidebar search formn-->
-
-              <h3 class="sidebar-title">Categories</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  <li>
-                    <a href="#">
-                      Science
-                      <span>(25)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Technology
-                      <span>(12)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Art
-                      <span>(5)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Spiritual
-                      <span>(22)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Business
-                      <span>(8)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Trending
-                      <span>(14)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Educational
-                      <span>(10)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Innovation
-                      <span>(29)</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- End sidebar categories-->
-            <div class="col-lg-4">
-              <h3 class="sidebar-title">Recent Posts</h3>
-              <div class="sidebar-item recent-posts">
-                <div class="post-item clearfix">
-                  <h4>
-                    <a href="blog-single.html">Nihil blanditiis at in nihil autem</a>
-                  </h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-
-                <div class="post-item clearfix">
-                  <h4>
-                    <a href="blog-single.html">Quidem autem et impedit</a>
-                  </h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-
-                <div class="post-item clearfix">
-                  <h4>
-                    <a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a>
-                  </h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-
-                <div class="post-item clearfix">
-                  <h4>
-                    <a href="blog-single.html">Laborum corporis quo dara net para</a>
-                  </h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-              </div>
-            </div>
-            <!-- End sidebar recent posts-->
-            <div class="col-lg-4">
-              <h3 class="sidebar-title">Tags</h3>
-              <div class="sidebar-item tags">
-                <ul>
-                  <li>
-                    <a href="#">Design</a>
-                  </li>
-                  <li>
-                    <a href="#">IT</a>
-                  </li>
-                  <li>
-                    <a href="#">Business</a>
-                  </li>
-                  <li>
-                    <a href="#">Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Lifestyle</a>
-                  </li>
-                  <li>
-                    <a href="#">Books</a>
-                  </li>
-                  <li>
-                    <a href="#">Courses</a>
-                  </li>
-                  <li>
-                    <a href="#">Music</a>
-                  </li>
-                  <li>
-                    <a href="#">Inspirational</a>
-                  </li>
-                  <li>
-                    <a href="#">Science</a>
-                  </li>
-                  <li>
-                    <a href="#">Health care</a>
-                  </li>
-                  <li>
-                    <a href="#">Technology</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- End sidebar tags-->
-          </div>
-          <!-- End row-->
+          <bl/>
         </div>
         <!-- End sidebar-->
         <!-- ======= Blog Section ======= -->
         <section id="blog" class="blog">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12 entries">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 entries">
                 <article class="entry entry-single" data-aos="fade-up">
                   <div class="entry-img">
                   </div>
@@ -296,94 +150,26 @@
                 <!-- End blog author bio -->
 
                 <div class="blog-comments" data-aos="fade-up">
-                  <h4 class="comments-count">8 Comments</h4>
+                  <h4 class="comments-count">Comments</h4>
 
-                  <div id="comment-1" class="comment clearfix">
+                  <div id="comment-1" class="comment clearfix" v-for="comment in comments" :key="comment._id">
                     <h5>
-                      <a href>Georgia Reader</a>
+                      <a href>{{comment.name}}</a>
                       <a href="#" class="reply">
                         <i class="icofont-reply"></i> Reply
                       </a>
                     </h5>
-                    <time datetime="2020-01-01">01 Jan, 2020</time>
+                    <time datetime="2020-01-01">{{comment.date}}</time>
                     <p>
-                      Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
-                      Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                      {{comment.comment}}
                     </p>
                   </div>
                   <!-- End comment #1 -->
 
-                  <div id="comment-2" class="comment clearfix">
-                    <h5>
-                      <a href>Aron Alvarado</a>
-                      <a href="#" class="reply">
-                        <i class="icofont-reply"></i> Reply
-                      </a>
-                    </h5>
-                    <time datetime="2020-01-01">01 Jan, 2020</time>
-                    <p>Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.</p>
-
-                    <div id="comment-reply-1" class="comment comment-reply clearfix">
-                      <h5>
-                        <a href>Lynda Small</a>
-                        <a href="#" class="reply">
-                          <i class="icofont-reply"></i> Reply
-                        </a>
-                      </h5>
-                      <time datetime="2020-01-01">01 Jan, 2020</time>
-                      <p>
-                        Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae.
-                        Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat.
-                        Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem quisquam vero rerum neque.
-                      </p>
-
-                      <div id="comment-reply-2" class="comment comment-reply clearfix">
-                        <h5>
-                          <a href>Sianna Ramsay</a>
-                          <a href="#" class="reply">
-                            <i class="icofont-reply"></i> Reply
-                          </a>
-                        </h5>
-                        <time datetime="2020-01-01">01 Jan, 2020</time>
-                        <p>Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. Perferendis id consectetur necessitatibus.</p>
-                      </div>
-                      <!-- End comment reply #2-->
-                    </div>
-                    <!-- End comment reply #1-->
-                  </div>
-                  <!-- End comment #2-->
-
-                  <div id="comment-3" class="comment clearfix">
-                    <h5>
-                      <a href>Nolan Davidson</a>
-                      <a href="#" class="reply">
-                        <i class="icofont-reply"></i> Reply
-                      </a>
-                    </h5>
-                    <time datetime="2020-01-01">01 Jan, 2020</time>
-                    <p>
-                      Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium tempore. Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at.
-                      Non aut et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur officia beatae ea aut eos soluta. Non qui dolorum voluptatibus et optio veniam. Quam officia sit nostrum dolorem.
-                    </p>
-                  </div>
-                  <!-- End comment #3 -->
-
-                  <div id="comment-4" class="comment clearfix">
-                    <h5>
-                      <a href>Kay Duggan</a>
-                      <a href="#" class="reply">
-                        <i class="icofont-reply"></i> Reply
-                      </a>
-                    </h5>
-                    <time datetime="2020-01-01">01 Jan, 2020</time>
-                    <p>Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. Cumque sed quia ut maxime. Est ad aut cum. Ut exercitationem non in fugiat.</p>
-                  </div>
-                  <!-- End comment #4 -->
-
                   <div class="reply-form">
                     <h4>Leave a Reply</h4>
                     <p>Your email address will not be published. Required fields are marked *</p>
-                    <form action>
+                    <form @submit.prevent="Addcomment(article)">
                       <div class="row">
                         <div class="col-md-6 form-group">
                           <input
@@ -391,6 +177,7 @@
                             type="text"
                             class="form-control"
                             placeholder="Your Name*"
+                            v-model="name"
                           />
                         </div>
                         <div class="col-md-6 form-group">
@@ -414,7 +201,7 @@
                       </div>
                       <div class="row">
                         <div class="col form-group">
-                          <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                          <textarea name="comment" class="form-control" placeholder="Your Comment*" v-model="comment"></textarea>
                         </div>
                       </div>
                       <button type="submit" class="btn btn-primary">Post Comment</button>
@@ -444,24 +231,48 @@
 <script>
 import Headers from "../components/Headers";
 import footers from "../components/footers";
+import bl from "../components/bl"
+import axios from "axios"
 export default {
   components: {
     Headers,
-    footers
+    footers,
+    bl
   },
   props: ["id"],
   data() {
     return {
-      imageLink: "http://localhost:3000/"
+      imageLink: "http://localhost:3000/",
+      comment: "",
+      name: ""
     };
   },
   computed: {
     article() {
       return this.$store.state.article;
+    },
+    comments() {
+      return this.$store.state.comments;
     }
   },
   mounted() {
     this.$store.dispatch("getArticle", this.id);
+    this.$store.dispatch("getComments", this.id);
+  },
+  methods:{
+    async Addcomment(article){
+      await axios.post("http://localhost:3000/comments",{
+        comment: this.comment,
+        name: this.name
+      },
+      {
+        params:{
+          user: this.$store.state.user,
+          article: this.id
+        }
+      }
+      )  
+    }
   }
 };
 </script>

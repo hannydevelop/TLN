@@ -23,12 +23,13 @@
     <section id="blog" class="blog">
       <div class="container">
         <div class="sidebar" data-aos="fade-left">
-          <bl />
+            <bl/>
+            <!-- End sidebar categories-->
         </div>
         <!-- End sidebar-->
         <h3>ARTICLES</h3>
         <div class="row">
-          <div v-for="article in articles" :key="article._id" class="col-lg-4 col-md-4 col-sm-6 col-xs-6 entries">
+          <div v-for="article in articles" :key="article._id" class="col-lg-4 entries">
             <article class="entry" data-aos="fade-up">
               <div class="entry-img">
                 <img :src="imageLink + article.file" alt class="img-fluid" />
@@ -65,52 +66,7 @@
               </div>
             </article>
           </div>
-          <!-- End blog entry -->
-        </div>
-
-        <h3>VIDEOS</h3>
-        <div class="row">
-          <div v-for="talk in talks" :key="talk._id" class="col-lg-4 col-md-4 col-sm-6 col-xs-6 entries">
-            <article class="entry" data-aos="fade-up">
-              <div class="entry-img">
-                <img :src="imageLink + talk.file" alt class="img-fluid" />
-              </div>
-
-              <h2 class="entry-title">
-                <router-link :to="{name: 'blog', params: {id: talk._id}}">{{talk.title}}</router-link>
-              </h2>
-
-              <div class="entry-meta">
-                <ul>
-                  <li class="d-flex align-items-center">
-                    <i class="icofont-user"></i>
-                    <a href="blog-single.html">{{talk.username}}</a>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i class="icofont-wall-clock"></i>
-                    <a href="blog-single.html">
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </a>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i class="icofont-comment"></i>
-                    <a href="blog-single.html">12 Comments</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="entry-content">
-                <p>{{talk.intro}}</p>
-                <div class="read-more">
-                  <button class="btn btn-danger" @click="download(talk)">
-                    <i class="icofont-download"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- End blog entry -->
-        </div>
+        </div> <!-- End blog entry -->
 
         <div class="blog-pagination">
           <ul class="justify-content-center">
@@ -145,7 +101,7 @@
 </template>
 
 <script>
-import axios from "axios"
+import axios from "axios";
 import Headers from "../components/Headers";
 import footers from "../components/footers";
 import bl from "../components/bl";
@@ -160,41 +116,13 @@ export default {
       imageLink: "http://localhost:3000/"
     };
   },
-  props: ["category"],
   computed: {
     articles() {
-      return this.$store.state.categories;
+      return this.$store.state.articles;
     },
-    talks() {
-      return this.$store.state.categoriestalk;
-    }
   },
   mounted() {
-    this.$store.dispatch("getCategories", this.category);
-    this.$store.dispatch("getCategoriestalk", this.category);
+    this.$store.dispatch("getArticles");
   },
-  methods: {
-    download(talk) {
-      axios({
-        url: `http://localhost:3000/${talk.file}`,
-        method: "GET",
-        responseType: "blob"
-      })
-        .then(response => {
-          var fileURL = window.URL.createObjectURL(new Blob([response.data]));
-          var fileLink = document.createElement("a");
-
-          fileLink.href = fileURL;
-          fileLink.setAttribute("download", "file.mp4");
-          document.body.appendChild(fileLink);
-
-          fileLink.click();
-        })
-        .catch(error => {
-          console.log(error);
-          reject(error);
-        });
-    }
-  }
 };
 </script>

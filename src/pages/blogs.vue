@@ -10,7 +10,7 @@
           <h2>Blog</h2>
           <ol>
             <li>
-              <a href="index.html">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>Blog</li>
           </ol>
@@ -29,7 +29,7 @@
         <!-- End sidebar-->
         <h3>ARTICLES</h3>
         <div class="row">
-          <div v-for="article in articles" :key="article._id" class="col-lg-4 entries">
+          <div v-for="article in articles" :key="article._id" class="col-lg-4 col-md-4 col-sm-6 col-xs-6 entries">
             <article class="entry" data-aos="fade-up">
               <div class="entry-img">
                 <img :src="imageLink + article.file" alt class="img-fluid" />
@@ -70,7 +70,7 @@
 
         <h3>TALKS</h3>
         <div class="row">
-          <div v-for="talk in talks" :key="talk._id" class="col-lg-4 entries">
+          <div v-for="talk in talks" :key="talk._id" class="col-lg-4 col-md-4 col-sm-6 col-xs-6 entries">
             <article class="entry" data-aos="fade-up">
               <div class="entry-img">
                 <img :src="imageLink + talk.file" alt class="img-fluid" />

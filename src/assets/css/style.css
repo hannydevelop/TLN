@@ -1492,6 +1492,10 @@ section {
   padding: 40px 0 20px 0;
 }
 
+.bl{
+  background-color: ghostwhite;
+}
+
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
@@ -2026,7 +2030,7 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: green;
+  background:black;
 }
 
 #footer .footer-top {
@@ -2040,12 +2044,24 @@ section {
 }
 
 #footer .footer-top .footer-contact h3 {
-  font-size: 22px;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#footer .footer-top .footer-contacts h3 {
+  font-size: 40px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -2054,8 +2070,13 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .footer-top .footer-contact p a {
+  font-size: 25px;
 }
 
 #footer .footer-top h4 {
@@ -2154,9 +2175,10 @@ section {
 }
 
 #footer .credits {
-  padding-top: 5px;
+  padding-top: 0px;
   font-size: 13px;
   color: #fff;
+  text-align: center;
 }
 
 #footer .social-links a {

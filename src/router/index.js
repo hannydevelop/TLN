@@ -3,8 +3,10 @@ import Router from 'vue-router'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import article from '../pages/article'
+import articles from '../pages/articles'
 import blogs from '../pages/blogs'
 import talks from '../pages/talks'
+import talk from '../pages/talk'
 import register from '../pages/register'
 import Login from '../pages/Login'
 import blog from '../pages/blog'
@@ -59,14 +61,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/articles',
+      path: '/uploadarticles',
       name: 'article',
       component: article,
     },
     {
-      path: '/talks',
+      path: '/articles',
+      name: 'articles',
+      component: articles,
+    },
+    {
+      path: '/uploadtalks',
       name: 'talks',
       component: talks,
+    },
+    {
+      path: '/talks',
+      name: 'talk',
+      component: talk,
     },
     {
       path: '/logout',

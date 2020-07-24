@@ -3,6 +3,7 @@ export default {
     user: localStorage.getItem('datass') || null,
     name: localStorage.getItem('datas') || null,
     articles: [],
+    comments: [],
     article: null,
     talks: [],
     categories: [],

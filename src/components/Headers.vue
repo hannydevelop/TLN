@@ -43,10 +43,10 @@
             <a href>Discover</a>
             <ul>
               <li>
-              <router-link to="/home">Talks</router-link>
+              <router-link to="/talks">Videos</router-link>
               </li>
               <li>
-                <router-link to="/home">Series</router-link>
+                <router-link to="/articles">Articles</router-link>
               </li>
             </ul>
           </li>
@@ -54,25 +54,19 @@
             <a href>Participate</a>
             <ul>
               <li>
-                <a href="about.html">Norminate</a>
+                <router-link to="/uploadarticles">Post Article</router-link>
               </li>
               <li>
-                <a href="team.html">Organize Talks</a>
-              </li>
-              <li>
-                <router-link to="/articles">Post Article</router-link>
-              </li>
-              <li>
-                <router-link to="/Talks">Post Talks</router-link>
+                <router-link to="/uploadTalks">Post Talks</router-link>
               </li>
             </ul>
           </li>
 
           <li v-if="!loggedIn">
-            <router-link to="/login">Blog</router-link>
+            <router-link to="/login">Login</router-link>
           </li>
           <li v-if="loggedIn">
-            <a href="/logout">Logout</a>
+            <router-link to="/logout">Logout</router-link>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,7 @@
 <template>
+<section id="bl" class="bl">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <h3 class="sidebar-title">Search</h3>
       <div class="sidebar-item search-form">
         <form action>
@@ -14,7 +15,7 @@
     </div>
     <!-- End sidebar categories-->
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <h3 class="sidebar-title">Recent Posts</h3>
       <div class="sidebar-item recent-posts">
         <div class="post-item clearfix" v-for="article in articles.slice(0,3)" :key="article._id">
@@ -27,7 +28,7 @@
       </div>
     </div>
     <!-- End sidebar recent posts-->
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <h3 class="sidebar-title">Tags</h3>
       <div class="sidebar-item tags">
         <ul>
@@ -72,6 +73,7 @@
     </div>
     <!-- End sidebar tags-->
   </div>
+</section>
 </template>
 
 <script>

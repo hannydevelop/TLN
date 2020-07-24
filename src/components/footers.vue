@@ -4,27 +4,27 @@
   <section id="clients" class="clients section-bg">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-1.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-2.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-3.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-4.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-5.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-6.png" class="img-fluid" alt />
         </div>
       </div>
@@ -37,104 +37,25 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Company</h3>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-contact">
+            <h3><img src="../assets/img/clients/client-1.png" class="img-fluid" alt /></h3>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-contacts">
+             <h4>Contact</h4>
             <p>
-              A108 Adam Street
-              <br />New York, NY 535022
-              <br />United States
+              FUPRE Street
+              <br />Effurun, Warri
+              <br />Delta State
               <br />
               <br />
               <strong>Phone:</strong> +1 5589 55488 55
               <br />
-              <strong>Email:</strong> info@example.com
+              <strong>Email:</strong> TLN@example.com
               <br />
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Design</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Product Management</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Marketing</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Graphic Design</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action method="post">
-              <input type="email" name="email" />
-              <input type="submit" value="Subscribe" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          &copy; Copyright
-          <strong>
-            <span>Company</span>
-          </strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          Designed by
-          <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter">
+              <p>
+              
+              <a href="#" class="twitter">
           <i class="bx bxl-twitter"></i>
         </a>
         <a href="#" class="facebook">
@@ -149,8 +70,85 @@
         <a href="#" class="linkedin">
           <i class="bx bxl-linkedin"></i>
         </a>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="/home">Home</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="/about">About us</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Terms of service</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-links">
+            <h4>About Us</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Mentoring</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Capital Development</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Human Development</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Leadership</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Tech Development</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Get in touch with us and recieve regular updates directly to your mail</p>
+            <form action method="post">
+              <input type="email" name="email" />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="container  py-4">
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
+          &copy; Copyright <strong> TLN </strong> All Rights Reserved
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
   </footer>
     </div>
   <!-- End Footer -->

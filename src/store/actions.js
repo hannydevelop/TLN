@@ -87,6 +87,13 @@ export const getArticles = ({ commit }) => {
     })
 }
 
+export const getComments = ({ commit }, commentsId) => {
+  axios.get(`https://ugochimyapp.herokuapp.com/comments/1/${commentsId}`)
+    .then(response => {
+      commit('SET_COMMENTS', response.data)
+    })
+}
+
 export const getArticle = ({ commit }, articleId) => {
   axios.get(`https://ugochimyapp.herokuapp.com/articles/${articleId}`)
     .then(response => {
