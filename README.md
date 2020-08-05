@@ -1,6 +1,6 @@
 # client
 
-> A Vue.js project
+> A Vue.js project applying CRUD operations with MEVN stack, utilising expressRouter
 
 ## Build Setup
 
@@ -28,3 +28,6 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+# Clone
+Clone this repo to your local machine using https://github.com/hannydevelop/TLN
