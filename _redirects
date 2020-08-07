@@ -1,2 +1,4 @@
-# Netlify settings for single-page application
-/*    /index.html   200
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
