@@ -19,55 +19,62 @@
     </section>
     <!-- End Breadcrumbs -->
 
-    <!-- ======= Blog Section ======= -->
+   <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
       <div class="container">
         <div class="sidebar" data-aos="fade-left">
-            <bl/>
-            <!-- End sidebar categories-->
+          <bl />
         </div>
-        <!-- End sidebar-->
-        <h3>ARTICLES</h3>
+        <div class="section-title" data-aos="fade-up">
+          <h2>
+            <strong>ARTICLES</strong>
+          </h2>
+        </div>
         <div class="row">
-          <div v-for="article in articles" :key="article._id" class="col-lg-4 entries">
-            <article class="entry" data-aos="fade-up">
-              <div class="entry-img">
-                <img :src="imageLink + article.file" alt class="img-fluid" />
-              </div>
+          <div
+            class="col-lg-4 col-md-4 col-sm-4 col-xs-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            v-for="article in articles"
+            :key="article._id"
+          >
+            <div class="icon-box iconbox-blue">
+              <div class="cardbody">
+                <img class="card-img-top" :src="imageLink + article.file" alt="Card image cap" />
+                <h2 class="entry-title">
+                  <router-link :to="{name: 'blog', params: {id: article._id}}">{{article.title}}</router-link>
+                </h2>
 
-              <h2 class="entry-title">
-                <router-link :to="{name: 'blog', params: {id: article._id}}">{{article.title}}</router-link>
-              </h2>
-
-              <div class="entry-meta">
-                <ul>
-                  <li class="d-flex align-items-center">
-                    <i class="icofont-user"></i>
-                    <a href="blog-single.html">{{article.username}}</a>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i class="icofont-wall-clock"></i>
-                    <a href="blog-single.html">
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </a>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i class="icofont-comment"></i>
-                    <a href="blog-single.html">12 Comments</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="entry-content">
-                <p>{{article.intro}}</p>
-                <div class="read-more">
-                  <router-link :to="{name: 'blog', params: {id: article._id}}">Read More</router-link>
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="icofont-user"></i>
+                      <a href="blog-single.html">{{article.username}}</a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="icofont-wall-clock"></i>
+                      <a href="blog-single.html">
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="icofont-comment"></i>
+                      <a href="blog-single.html">12 Comments</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="entry-content">
+                  <p>{{article.intro}}</p>
+                  <div class="read-more">
+                    <router-link :to="{name: 'blog', params: {id: article._id}}">Read More</router-link>
+                  </div>
                 </div>
               </div>
-            </article>
+            </div>
           </div>
-        </div> <!-- End blog entry -->
-
+        </div>
+        </div>
+        <!-- End blog entry -->
         <div class="blog-pagination">
           <ul class="justify-content-center">
             <li class="disabled">
@@ -89,8 +96,6 @@
             </li>
           </ul>
         </div>
-      </div>
-      <!-- End blog entries list -->
     </section>
     <!-- End Blog Section -->
   </main>

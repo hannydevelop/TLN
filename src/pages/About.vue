@@ -1,32 +1,35 @@
 /* eslint-disable */
 <template>
 <body>
-    <Headers/>
+  <Headers />
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>About</h2>
           <ol>
-            <li><a href="/home">Home</a></li>
+            <li>
+              <a href="/home">Home</a>
+            </li>
             <li>About</li>
           </ol>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
+    <!-- End Breadcrumbs -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
-
+        <div class="section-title" data-aos="fade-up">
+          <h2>
+            <strong>ABOUT US</strong>
+          </h2>
+        </div>
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right">
-            <h2>Eum ipsam laborum deleniti velitena</h2>
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
+            <img src="../assets/img/slide/slide-1.jpg" class="img-fluid" alt />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p>
@@ -35,9 +38,15 @@
               culpa qui officia deserunt mollit anim id est laborum
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+              <li>
+                <i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              </li>
             </ul>
             <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -45,30 +54,39 @@
             </p>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Us Section -->
+    </section>
+    <!-- End About Us Section -->
 
     <!-- ======= Our Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
-          <h2>Our <strong>Team</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>
+            Our
+            <strong>Directors</strong>
+          </h2>
+          <p>Bringing light to a place filled with darkness is a great job to do! Meet our ever devoted directors who provide guidance by upholding light.</p>
         </div>
 
         <div class="row">
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up">
               <div class="member-img">
-                <img src="../assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="../assets/img/team/team-1.jpg" class="img-fluid" alt />
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href>
+                    <i class="icofont-twitter"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-facebook"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-instagram"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div class="member-info">
@@ -81,12 +99,20 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="../assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="../assets/img/team/team-2.jpg" class="img-fluid" alt />
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href>
+                    <i class="icofont-twitter"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-facebook"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-instagram"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div class="member-info">
@@ -99,12 +125,20 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="../assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="../assets/img/team/team-3.jpg" class="img-fluid" alt />
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href>
+                    <i class="icofont-twitter"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-facebook"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-instagram"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div class="member-info">
@@ -117,12 +151,20 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="../assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="../assets/img/team/team-4.jpg" class="img-fluid" alt />
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href>
+                    <i class="icofont-twitter"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-facebook"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-instagram"></i>
+                  </a>
+                  <a href>
+                    <i class="icofont-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div class="member-info">
@@ -131,156 +173,62 @@
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Our Team Section -->
+    </section>
+    <!-- End Our Team Section -->
 
-    <!-- ======= Our Skills Section ======= -->
+    <!-- ======= Our Mission Section ======= -->
     <section id="skills" class="skills">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
-          <h2>Our <strong>AIMS</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>
+            <strong>MISSION</strong>
+          </h2>
+          <p>The mission of TLN is to bring light into the heart of all, enlighten, mentor the youths and uphold humanity. Our aims lie between our core pillars which are listed below:</p>
         </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Our Skills Section -->
+    </section>
+    <!-- End Our Skills Section -->
 
-     <!-- ======= Our Skills Section ======= -->
+    <!-- ======= Our AIM Section ======= -->
     <section id="skills" class="skills">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
-          <h2>CORE <strong>PILLARS</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>
+            <strong>AIMS</strong>
+          </h2>
+          <p>The mission of TLN is to bring light into the heart of all, enlighten, mentor the youths and uphold humanity. Our aims lie between our core pillars which are listed below:</p>
         </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Our Skills Section -->
+    </section>
+    <!-- End Our Skills Section -->
 
-  </main><!-- End #main -->
-<footers/>
-  </body>
+    <!-- ======= Our Pillars Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>
+            <strong>CORE PILLARS</strong>
+          </h2>
+          <p>The mission of TLN is to bring light into the heart of all, enlighten, mentor the youths and uphold humanity. Our aims lie between our core pillars which are listed below:</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Skills Section -->
+  </main>
+  <!-- End #main -->
+  <footers />
+</body>
 </template>
 
 <script>
-import Headers from "../components/Headers"
-import footers from "../components/footers"
+import Headers from "../components/Headers";
+import footers from "../components/footers";
 export default {
-    components:{
-        Headers,
-        footers
-    }
-}
+  components: {
+    Headers,
+    footers
+  }
+};
 </script>

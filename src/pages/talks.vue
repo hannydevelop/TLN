@@ -172,7 +172,7 @@ export default {
         formData.append("type", this.type);
         formData.append("intro", this.intro);
         formData.append("section", this.section);
-        await axios.post("https://ugochimyapp.herokuapp.com/talks", formData, {
+        await axios.post("http://localhost:3000/talks", formData, {
           params: {
             user: this.$store.state.user,
             username: this.$store.state.name

@@ -20,7 +20,19 @@ require('./assets/vendor/venobox/venobox.css')
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
-
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (!store.getters.loggedIn) {
+      next({
+        path: '/login'
+      })
+    } else {
+      next()
+    }
+  } else {
+    next()
+  }
+})
 
 /* eslint-disable no-new */
 new Vue({

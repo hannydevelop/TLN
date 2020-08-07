@@ -58,12 +58,16 @@ export default new Router({
     {
       path: '/Home',
       name: 'Home',
-      component: Home
+      component: Home,
+      props: true
     },
     {
       path: '/uploadarticles',
       name: 'article',
       component: article,
+      meta: {
+        requiresAuth: true,
+      }
     },
     {
       path: '/articles',
@@ -74,6 +78,9 @@ export default new Router({
       path: '/uploadtalks',
       name: 'talks',
       component: talks,
+      meta: {
+        requiresAuth: true,
+      }
     },
     {
       path: '/talks',
