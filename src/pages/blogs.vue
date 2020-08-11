@@ -169,7 +169,7 @@ export default {
   },
   data() {
     return {
-      imageLink: "http://localhost:3000/"
+      imageLink: "https://ugochimyapp.herokuapp.com/"
     };
   },
   computed: {
@@ -187,7 +187,7 @@ export default {
   methods: {
     download(talk) {
       axios({
-        url: `http://localhost:3000/${talk.file}`,
+        url: `https://ugochimyapp.herokuapp.com/${talk.file}`,
         method: "GET",
         responseType: "blob"
       })

@@ -242,7 +242,7 @@ export default {
   props: ["id"],
   data() {
     return {
-      imageLink: "http://localhost:3000/",
+      imageLink: "https://ugochimyapp.herokuapp.com/",
       comment: "",
       name: ""
     };
@@ -261,7 +261,7 @@ export default {
   },
   methods:{
     async Addcomment(article){
-      await axios.post("http://localhost:3000/comments",{
+      await axios.post("https://ugochimyapp.herokuapp.com/comments",{
         comment: this.comment,
         name: this.name
       },

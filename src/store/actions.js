@@ -21,7 +21,7 @@ export const destroyToken = (context) => {
 
 export const retrieveToken = (context, credentials) => {
   return new Promise((resolve, reject) => {
-    axios.post('http://localhost:3000/users/login', {
+    axios.post('https://ugochimyapp.herokuapp.com/users/login', {
       email: credentials.email,
       password: credentials.password,
     })
@@ -42,7 +42,7 @@ export const retrieveToken = (context, credentials) => {
 
 export const retrieveId = (context, credentials) => {
   return new Promise((resolve, reject) => {
-    axios.post('http://localhost:3000/users/login', {
+    axios.post('https://ugochimyapp.herokuapp.com/users/login', {
       email: credentials.email,
       password: credentials.password,
     })
@@ -62,7 +62,7 @@ export const retrieveId = (context, credentials) => {
 
 export const retrieveUser = (context, credentials) => {
   return new Promise((resolve, reject) => {
-    axios.post('http://localhost:3000/users/login', {
+    axios.post('https://ugochimyapp.herokuapp.com/users/login', {
       email: credentials.email,
       password: credentials.password,
     })
@@ -81,49 +81,49 @@ export const retrieveUser = (context, credentials) => {
 }
 
 export const getArticles = ({ commit }) => {
-  axios.get('http://localhost:3000/articles')
+  axios.get('https://ugochimyapp.herokuapp.com/articles')
     .then(response => {
       commit('SET_ARTICLES', response.data)
     })
 }
 
 export const getComments = ({ commit }, commentsId) => {
-  axios.get(`http://localhost:3000/comments/1/${commentsId}`)
+  axios.get(`https://ugochimyapp.herokuapp.com/comments/1/${commentsId}`)
     .then(response => {
       commit('SET_COMMENTS', response.data)
     })
 }
 
 export const getArticle = ({ commit }, articleId) => {
-  axios.get(`http://localhost:3000/articles/${articleId}`)
+  axios.get(`https://ugochimyapp.herokuapp.com/articles/${articleId}`)
     .then(response => {
       commit('SET_ARTICLE', response.data)
     })
 }
 
 export const getTalks = ({ commit }) => {
-  axios.get('http://localhost:3000/talks')
+  axios.get('https://ugochimyapp.herokuapp.com/talks')
     .then(response => {
       commit('SET_TALKS', response.data)
     })
 }
 
 export const getCategories = ({ commit }, categories) => {
-  axios.get(`http://localhost:3000/articles/category/${categories}`)
+  axios.get(`https://ugochimyapp.herokuapp.com/articles/category/${categories}`)
     .then(response => {
       commit('SET_CATEGORY', response.data)
     })
 }
 
 export const getCategoriestalk = ({ commit }, categoriestalk) => {
-  axios.get(`http://localhost:3000/talks/category/${categoriestalk}`)
+  axios.get(`https://ugochimyapp.herokuapp.com/talks/category/${categoriestalk}`)
     .then(response => {
       commit('SET_CATEGORYTALK', response.data)
     })
 }
 
 export const getSection = ({ commit }, section) => {
-  axios.get(`http://localhost:3000/articles/section/${section}`)
+  axios.get(`https://ugochimyapp.herokuapp.com/articles/section/${section}`)
     .then(response => {
       commit('SET_SECTION', response.data)
     })

@@ -88,7 +88,7 @@ export default {
       business: "business",
       spiritual: "spiritual",
       educational: "educational",
-      imageLink: "http://localhost:3000/"
+      imageLink: "https://ugochimyapp.herokuapp.com/"
     };
   },
   computed: {
