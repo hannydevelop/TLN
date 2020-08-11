@@ -32,15 +32,15 @@
         </div>
         <div class="row">
           <div
-            class="col-lg-4 col-md-4 col-sm-4 col-xs-6"
+            class="col-lg-4 col-md-4 col-sm-4 col-6"
             data-aos="zoom-in"
             data-aos-delay="100"
             v-for="talk in talks"
             :key="talk._id"
           >
+          <div class="forTalks">
             <div class="icon-box iconbox-blue">
               <div class="cardbody">
-                <img class="card-img-top" :src="imageLink + talk.file" alt="Card image cap" />
                 <h2 class="entry-title">
                   <router-link :to="{name: 'blog', params: {id:talk._id}}">{{talk.title}}</router-link>
                 </h2>
@@ -71,6 +71,7 @@
                   </button>
                 </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>

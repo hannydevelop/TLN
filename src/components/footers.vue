@@ -4,27 +4,27 @@
   <section id="clients" class="clients section-bg">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-1.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-2.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-3.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-4.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-5.png" class="img-fluid" alt />
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
           <img src="../assets/img/clients/client-6.png" class="img-fluid" alt />
         </div>
       </div>
@@ -37,11 +37,11 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-contact">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 footer-contact">
             <h3><img src="../assets/img/clients/client-1.png" class="img-fluid" alt /></h3>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-contacts">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 footer-contacts">
              <h4>Contact</h4>
             <p>
               FUPRE Street
@@ -73,7 +73,7 @@
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  footer-links">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-2   footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li>
@@ -100,7 +100,7 @@
           </div>
           
 
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-links">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3  footer-links">
             <h4>About Us</h4>
             <ul>
               <li>
@@ -126,7 +126,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-newsletter">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-4 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Get in touch with us and recieve regular updates directly to your mail</p>
             <form action method="post">

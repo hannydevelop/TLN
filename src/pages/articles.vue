@@ -32,7 +32,7 @@
         </div>
         <div class="row">
           <div
-            class="col-lg-4 col-md-4 col-sm-4 col-xs-6"
+            class="col-lg-4 col-md-4 col-sm-4 col-6"
             data-aos="zoom-in"
             data-aos-delay="100"
             v-for="article in articles"

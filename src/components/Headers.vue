@@ -28,14 +28,30 @@
           <li class="drop-down">
             <router-link to="/blog">Blog</router-link>
             <ul>
-              <li><router-link :to="{name: 'category', params: {category: science}}">Science</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: technology}}">Technology</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: art}}">Art</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: innovation}}">Innovation</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: trending}}">Trending</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: business}}">Business</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: spiritual}}">Spiritual</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: educational}}">Educational</router-link></li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: science}}">Science</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: technology}}">Technology</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: art}}">Art</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: innovation}}">Innovation</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: trending}}">Trending</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: business}}">Business</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: spiritual}}">Spiritual</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'category', params: {category: educational}}">Educational</router-link>
+              </li>
             </ul>
           </li>
 
@@ -43,7 +59,7 @@
             <a href>Discover</a>
             <ul>
               <li>
-              <router-link to="/talks">Videos</router-link>
+                <router-link to="/talks">Videos</router-link>
               </li>
               <li>
                 <router-link to="/articles">Articles</router-link>
@@ -86,68 +102,88 @@
           <i class="icofont-linkedin"></i>
         </a>
       </div>
-      <div class="">
-          <div id="mySidenav" class="sidenav">
-            <span class="closebtn" @click="closeNav()">&times;</span>
-            <nav class="">
+      <div class>
+        <div id="mySidenav" class="sidenav">
+          <span class="closebtn" @click="closeNav()">&times;</span>
+          <nav class>
             <ul>
-          <li class="active">
-            <router-link to="/home">Home</router-link>
-          </li>
+              <li class="active">
+                <router-link to="/home">Home</router-link>
+              </li>
 
-          <li>
-            <router-link to="/about">About</router-link>
-          </li>
+              <li>
+                <router-link to="/about">About</router-link>
+              </li>
 
-          <li class="drop-down">
-            <router-link to="/blog">Blog</router-link>
-            <ul>
-              <li><router-link :to="{name: 'category', params: {category: science}}">Science</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: technology}}">Technology</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: art}}">Art</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: innovation}}">Innovation</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: trending}}">Trending</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: business}}">Business</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: spiritual}}">Spiritual</router-link></li>
-              <li><router-link :to="{name: 'category', params: {category: educational}}">Educational</router-link></li>
+              <li class="drop-down">
+                <router-link to="/blog">Blog</router-link>
+                <ul>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: science}}">Science</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: technology}}">Technology</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: art}}">Art</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: innovation}}">Innovation</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: trending}}">Trending</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: business}}">Business</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'category', params: {category: spiritual}}">Spiritual</router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      :to="{name: 'category', params: {category: educational}}"
+                    >Educational</router-link>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="drop-down">
+                <a>Discover</a>
+                <ul>
+                  <li>
+                    <router-link to="/talks">Videos</router-link>
+                  </li>
+                  <li>
+                    <router-link to="/articles">Articles</router-link>
+                  </li>
+                </ul>
+              </li>
+              <li class="drop-down">
+                <a>Participate</a>
+                <ul>
+                  <li>
+                    <router-link to="/uploadarticles">Post Article</router-link>
+                  </li>
+                  <li>
+                    <router-link to="/uploadTalks">Post Talks</router-link>
+                  </li>
+                </ul>
+              </li>
+
+              <li v-if="!loggedIn">
+                <router-link to="/login">Login</router-link>
+              </li>
+              <li v-if="loggedIn">
+                <router-link to="/logout">Logout</router-link>
+              </li>
             </ul>
-          </li>
-
-          <li class="drop-down">
-            <a>Discover</a>
-            <ul>
-              <li>
-              <router-link to="/talks">Videos</router-link>
-              </li>
-              <li>
-                <router-link to="/articles">Articles</router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="drop-down">
-            <a>Participate</a>
-            <ul>
-              <li>
-                <router-link to="/uploadarticles">Post Article</router-link>
-              </li>
-              <li>
-                <router-link to="/uploadTalks">Post Talks</router-link>
-              </li>
-            </ul>
-          </li>
-
-          <li v-if="!loggedIn">
-            <router-link to="/login">Login</router-link>
-          </li>
-          <li v-if="loggedIn">
-            <router-link to="/logout">Logout</router-link>
-          </li>
-        </ul>
-            </nav>
-          </div>
-          <!-- Use any element to open the sidenav -->
-          <span @click="openNav()" class="pull-right menu-icon" id="mobile"> <i class="icofont-navigation-menu"></i></span>
+          </nav>
         </div>
+        <!-- Use any element to open the sidenav -->
+        <span @click="openNav()" class="pull-right menu-icon" id="mobile">
+          <i class="icofont-navigation-menu"></i>
+        </span>
+      </div>
     </div>
   </header>
   <!-- End Header -->
@@ -168,7 +204,7 @@ export default {
       spiritual: "spiritual",
       educational: "educational",
       section: "section",
-      talks:"talks"
+      talks: "talks"
     };
   },
   computed: {
@@ -176,18 +212,17 @@ export default {
       return this.$store.getters.loggedIn;
     }
   },
-  mounted:{
-  },
-  methods:{
+  mounted: {},
+  methods: {
     closeNav() {
-      document.getElementById("mySidenav").style.width = "0";  
+      document.getElementById("mySidenav").style.width = "0";
     },
     openNav() {
-       document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.width = "250px";
     },
     show() {
-      document.getElementById("showme").style.width = "250px";  
-    } 
+      document.getElementById("showme").style.width = "250px";
+    }
   }
 };
 </script>

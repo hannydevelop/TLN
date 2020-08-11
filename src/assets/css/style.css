@@ -273,14 +273,9 @@ h1, h2, h3, h4, h5, h6 {
 .sidenav .drop-down:active > ul {
   opacity: 1;
   top: 100%;
-  visibility: visible;
-  display: inline !important;
-  overflow:visible;
-}
-
-.sidenav .drop-down > a:active{
-  overflow: visible !important;
-  display: inline !important;
+  height: 100%;
+  overflow: show;
+  transition: all 0.3s;
 }
 
 .sidenav .drop-down > a {
@@ -288,7 +283,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidenav .drop-down ul {
-  display: none !important;
+  height: 100%;
+  overflow: show;
 }
 
 .sidenav .drop-down li {
@@ -352,6 +348,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
+#hero .card-img-top {
+  width: 100%;
+  height: 100vh;
+}
+
 #hero .carousel-item {
   background-size: cover;
   background-position: center;
@@ -368,14 +369,16 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
-  top: 70px;
-  left: 50px;
-  right: 50px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 #hero .container {
   text-align: center;
+   width: 100%;
+  height: 70vh;
 }
 
 #hero h2 {
@@ -616,7 +619,14 @@ section {
   padding: 10px 10px 10px 10px;
   transition: all ease-in-out 0.3s;
   background: transparent;
-  height: 300px;
+  height: 400px;
+}
+
+.forTalks .icon-box{
+  padding: 10px 10px 10px 10px;
+  transition: all ease-in-out 0.3s;
+  background: transparent;
+  height: 300px !important;
 }
 
 .services .card-img-top{
@@ -627,7 +637,7 @@ section {
   text-align: center;
   font-size: 25px;
   background-color: white;
-  max-height: 450px;
+  max-height: 480px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
@@ -2308,7 +2318,7 @@ section {
   border: 0;
   background: none;
   font-size: 16px;
-  padding: 0 20px;
+  padding: 0 5px;
   background: #1bbd36;
   color: #fff;
   transition: 0.3s;
