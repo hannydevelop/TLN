@@ -405,7 +405,7 @@ export default {
       business: "business",
       spiritual: "spiritual",
       educational: "educational",
-      imageLink: "https://ugochimyapp.herokuapp.com/",
+      imageLink: "https://localhost:3000/",
       access: true
     };
   },
