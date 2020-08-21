@@ -72,8 +72,8 @@ export default new Router({
     },
     {
       path: '*',
-      name: '/broken',
-      component: broken
+      name: '/Home',
+      component: Home
     },
     {
       path: '/about',
