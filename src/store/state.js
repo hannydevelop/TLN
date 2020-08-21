@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
     token: localStorage.getItem('data') || null,
     user: localStorage.getItem('datass') || null,
@@ -8,5 +9,6 @@ export default {
     talks: [],
     categories: [],
     categoriestalk: [],
-    section:[],
+    section: [],
+    nanms: []
 }

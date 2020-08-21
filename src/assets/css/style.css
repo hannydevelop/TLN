@@ -914,6 +914,28 @@ section {
   opacity: 1;
 }
 
+.team .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.team .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.team .content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #1bbd36;
+}
+
+.team .content p:last-child {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Our Skills
 --------------------------------------------------------------*/
@@ -2115,11 +2137,13 @@ section {
   text-align-last: center;
 }
 
+
 .blog .cardbody .entry-content .read-more a {
   display: inline-block;
   background: #1bbd36;
   color: #fff;
   padding: 7px 25px;
+  margin: 3px;
   transition: 0.3s;
   font-size: 14px;
   border-radius: 4px;
@@ -2179,6 +2203,30 @@ section {
   background-color: #111;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# 404
+--------------------------------------------------------------*/
+.redirect{
+  background-color: #18d26e;
+  height: 100vh;
+}
+.redirect h1{
+  font-weight: 600;
+  font-size: 100px;
+  margin-top: 100px;
+}
+.redirect h5{
+  font-size: 29px;
+}
+.redirect a{
+  font-size: 29px;
+  color: #111;
+}
+.redirect a:hover{
+  font-size: 29px;
+  color: red;
 }
 /*--------------------------------------------------------------
 # Footer

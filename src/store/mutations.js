@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 export const retrieveToken = (state, token) => {
   state.token = token
 }
@@ -41,4 +41,12 @@ export const SET_CATEGORYTALK = (state, categoriestalk) => {
 
 export const SET_SECTION = (state, section) => {
   state.section = section
+}
+
+export const SET_NANMS = (state, nanms) => {
+  state.nanms = nanms
+}
+
+export const SET_COURSE = (state, course) => {
+  state.course = course
 }

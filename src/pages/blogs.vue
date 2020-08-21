@@ -157,6 +157,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import axios from "axios";
 import Headers from "../components/Headers";
 import footers from "../components/footers";
@@ -169,7 +170,7 @@ export default {
   },
   data() {
     return {
-      imageLink: "https://ugochimyapp.herokuapp.com/"
+      imageLink: "http://localhost:3000/"
     };
   },
   computed: {

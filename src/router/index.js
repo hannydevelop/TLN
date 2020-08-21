@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../pages/Home'
+import broken from '@/components/broken'
 import About from '../pages/About'
+import terms from '../pages/terms'
 import article from '../pages/article'
 import articles from '../pages/articles'
 import blogs from '../pages/blogs'
@@ -10,7 +12,10 @@ import talk from '../pages/talk'
 import register from '../pages/register'
 import Login from '../pages/Login'
 import blog from '../pages/blog'
+import course from '../pages/course'
 import category from '../pages/category'
+import educational from '../pages/educational'
+import uploadID from '../pages/uploadID'
 import logout from '@/components/logout'
 
 Vue.use(Router)
@@ -27,6 +32,26 @@ export default new Router({
       path: '/blog',
       name: 'blogs',
       component: blogs
+    },
+    {
+      path: '/course',
+      name: 'course',
+      component: course
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: terms
+    },
+    {
+      path: '/NANMS_ID',
+      name: 'educational',
+      component: educational
+    },
+    {
+      path: '/uploadID',
+      name: 'uploadID',
+      component: uploadID
     },
     {
       path: '/blog/:category',
@@ -47,13 +72,13 @@ export default new Router({
     },
     {
       path: '*',
-      name: '/Home',
-      component: Home
+      name: '/broken',
+      component: broken
     },
     {
       path: '/about',
       name: 'About',
-      component: About,
+      component: About
     },
     {
       path: '/Home',
@@ -66,31 +91,31 @@ export default new Router({
       name: 'article',
       component: article,
       meta: {
-        requiresAuth: true,
+        requiresAuth: true
       }
     },
     {
       path: '/articles',
       name: 'articles',
-      component: articles,
+      component: articles
     },
     {
       path: '/uploadtalks',
       name: 'talks',
       component: talks,
       meta: {
-        requiresAuth: true,
+        requiresAuth: true
       }
     },
     {
       path: '/talks',
       name: 'talk',
-      component: talk,
+      component: talk
     },
     {
       path: '/logout',
       name: 'logout',
-      component: logout,
-    },
+      component: logout
+    }
   ]
 })

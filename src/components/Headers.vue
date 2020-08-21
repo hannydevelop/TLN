@@ -75,6 +75,9 @@
               <li>
                 <router-link to="/uploadTalks">Post Talks</router-link>
               </li>
+              <li>
+                <router-link to="/course">Post Courses</router-link>
+              </li>
             </ul>
           </li>
 
@@ -167,6 +170,9 @@
                   <li>
                     <router-link to="/uploadTalks">Post Talks</router-link>
                   </li>
+                  <li>
+                    <router-link to="/course">Post Courses</router-link>
+                  </li>
                 </ul>
               </li>
 
@@ -192,6 +198,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   data() {
     return {
@@ -204,15 +211,14 @@ export default {
       spiritual: "spiritual",
       educational: "educational",
       section: "section",
-      talks: "talks"
+      talks: "talks",
     };
   },
   computed: {
     loggedIn() {
       return this.$store.getters.loggedIn;
-    }
+    },
   },
-  mounted: {},
   methods: {
     closeNav() {
       document.getElementById("mySidenav").style.width = "0";
@@ -222,7 +228,7 @@ export default {
     },
     show() {
       document.getElementById("showme").style.width = "250px";
-    }
-  }
+    },
+  },
 };
 </script>

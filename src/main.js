@@ -8,14 +8,12 @@ import store from './store'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-
 require('./assets/css/style.css')
 require('./assets/vendor/icofont/icofont.min.css')
 require('./assets/vendor/boxicons/css/boxicons.min.css')
 require('./assets/vendor/animate.css/animate.min.css')
 require('./assets/vendor/remixicon/remixicon.css')
 require('./assets/vendor/venobox/venobox.css')
-
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)

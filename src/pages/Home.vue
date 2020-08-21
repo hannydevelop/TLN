@@ -1,9 +1,24 @@
-/* eslint-disable */
 <template>
 <body>
   <Headers />
-  <section id="hero">
-    <img class="card-img-top" src="../assets/img/slide/slide-2.jpg" alt="Card image cap" />
+  <section id="hero" >
+     <img class="card-img-top" src="../assets/img/slide/slide-2.jpg" alt="Card image cap" />
+    <div class="card-img-top">
+      <b-carousel
+        id="carousel-fade"
+        class="card-img-top"
+        style="text-shadow: 0px 0px 2px #000"
+        fade
+        indicators
+        ref="myCarousel"
+        
+      >
+        <b-carousel-slide class="card-img-top" caption="First slide"  img-src="../assets/img/slide/slide-2.jpg" ></b-carousel-slide>
+        <b-carousel-slide class="slide-img-top" caption="Second Slide"  img-src="../assets/img/slide/slide-1.jpg"></b-carousel-slide>
+        <b-carousel-slide class="slide-img-top" caption="Third Slide" img-src="https://picsum.photos/1024/480/?image=22"></b-carousel-slide>
+      </b-carousel>
+    </div>
+
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <!-- Slide 1 -->
@@ -21,7 +36,10 @@
                 class="animate__animated animate__fadeInUp"
               >Talks recommended just for you, delivered right into your inbox</p>
               <br />
-              <p>what intrests you?</p>
+              <p class="animate__animated animate__fadeInLeft">what intrests you?</p>
+              <button type="button" class="btn btn-default btn-rounded">
+                <router-link to="/NANMS_ID">Educational</router-link>
+              </button>
               <button type="button" class="btn btn-default btn-rounded">
                 <router-link :to="{name: 'category', params: {category: science}}">Science</router-link>
               </button>
@@ -71,9 +89,6 @@
               <button type="button" class="btn btn-default btn-rounded">
                 <router-link :to="{name: 'category', params: {category: educational}}">Development</router-link>
               </button>
-              <button type="button" class="btn btn-default btn-rounded">
-                <router-link :to="{name: 'category', params: {category: innovation}}">Design</router-link>
-              </button>
               <br />
               <br />
               <a
@@ -87,41 +102,23 @@
             </div>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
-          <div class="carousel-container">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2>Lorem Ipsum Dolor</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center">
-                <a href="/about" class="btn-get-started">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
-          <div class="carousel-container">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2>Sequi ea ut et est quaerat</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center">
-                <a href class="btn-get-started">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+      <a class="carousel-control-prev" role="button">
+        <span
+          class="carousel-control-prev-icon icofont-simple-left"
+          aria-hidden="true"
+          @click="prev()"
+        ></span>
         <span class="sr-only">Previous</span>
       </a>
 
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+      <a class="carousel-control-next" role="button">
+        <span
+          class="carousel-control-next-icon icofont-simple-right"
+          aria-hidden="true"
+          @click="next()"
+        ></span>
         <span class="sr-only">Next</span>
       </a>
 
@@ -135,7 +132,7 @@
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>
+          <h2 class="animate__animated animate__fadeInLeft">
             <strong>Newest Articles</strong>
           </h2>
           <p>Read and our latest articles from the light group</p>
@@ -143,7 +140,7 @@
 
         <div class="row">
           <div
-            class="col-lg-4 col-md-4 col-sm-4 col-6"
+            class="col-lg-4 col-md-4 col-sm-4 col-6 animate__animated animate__fadeInLeft"
             data-aos="zoom-in"
             data-aos-delay="100"
             v-for="article in articles.slice(0,3)"
@@ -152,7 +149,7 @@
             <div class="icon-box iconbox-blue">
               <div class="cardbody">
                 <img class="card-img-top" :src="imageLink + article.file" alt="Card image cap" />
-                <p>The power of the future</p>
+                <p>{{article.title}}</p>
                 <button class="btn btn-primary">Read</button>
                 <div v-if="access">
                   <button class="btn btn-danger">Delete</button>
@@ -170,15 +167,15 @@
       <div class="container" data-aos="fade-up">
         <div class="row content">
           <div class="col-lg-6 col-md-12 col-sm-12 col-12" data-aos="fade-right">
-            <img src="../assets/img/slide/slide-2.jpg" class="img-fluid" alt />
+            <img src="../assets/img/slide/slide-2.jpg" class="img-fluid animate__animated animate__fadeInLeft" alt />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <h2>The Art Of Finding</h2>
-            <p>
+            <h2 class="animate__animated animate__fadeInRight">The Art Of Finding</h2>
+            <p class="animate__animated animate__fadeInRight">
               Providing carrier mentorship and technology support for youths by educating the youths and teenagers
               through content creation, trainings and empowerment programs is finding light!
             </p>
-            <ul>
+            <ul class="animate__animated animate__fadeInLeft">
               <li>
                 <i class="ri-check-double-line"></i> Finding light by education and mentoring
               </li>
@@ -203,7 +200,7 @@
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>
+          <h2 class="animate__animated animate__fadeInLeft">
             <strong>Trending</strong>
           </h2>
           <p>Explore from our list of trending and most recent talks from our science library that would brighten your day</p>
@@ -211,7 +208,7 @@
 
         <div class="row">
           <div
-            class="col-lg-4 col-md-4 col-sm-4 col-6"
+            class="col-lg-4 col-md-4 col-sm-4 col-6 animate__animated animate__fadeInUp"
             data-aos="zoom-in"
             data-aos-delay="100"
             v-for="article in carts.slice(0,3)"
@@ -238,18 +235,18 @@
       <div class="container" data-aos="fade-up">
         <div class="row content">
           <div class="col-lg-6 col-md-12 col-sm-12 col-12" data-aos="fade-right">
-            <img src="../assets/img/slide/slide-1.jpg" class="img-fluid" alt />
+            <img src="../assets/img/slide/slide-1.jpg" class="img-fluid animate__animated animate__fadeInLeft" alt />
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-4 pt-lg-0" data-aos="fade-left">
-            <h3>
+            <h3 class="animate__animated animate__fadeInRight">
               <strong>HOW WE CAN BUILD BACK, TOGETHER, BETTER</strong>
             </h3>
-            <p>
+            <p class="animate__animated animate__fadeInRight">
               The five pillars of The Light Nigeria (TLN) is centered about leadership, mentorship and empowerment.
               Building back is nice, but building back together is better! Building back together is not possible with our core pillars
               TLN five core pillars include:
             </p>
-            <ul>
+            <ul class="animate__animated animate__fadeInDown">
               <li>
                 <i class="ri-check-double-line"></i> Leadership
               </li>
@@ -267,10 +264,9 @@
               </li>
             </ul>
           </div>
-          <p class="font-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-          </p>
+          <p
+            class="font-italic"
+          >Building is essential to the mind and soul of humans! While building, we uplift and encourage others too. Building is never complete without the five pillars of TLN.</p>
         </div>
       </div>
     </section>
@@ -388,12 +384,13 @@
 </template>
 
 <script>
+/* eslint-disable */
 import Headers from "../components/Headers";
 import footers from "../components/footers";
 export default {
   components: {
     Headers,
-    footers
+    footers,
   },
   data() {
     return {
@@ -405,8 +402,8 @@ export default {
       business: "business",
       spiritual: "spiritual",
       educational: "educational",
-      imageLink: "https://localhost:3000/",
-      access: true
+      imageLink: "https://ugochimyapp.herokuapp.com/",
+      access: true,
     };
   },
   computed: {
@@ -418,12 +415,25 @@ export default {
     },
     carts() {
       return this.$store.state.categories;
-    }
+    },
   },
   mounted() {
     this.$store.dispatch("getArticles");
     this.$store.dispatch("getTalks");
     this.$store.dispatch("getCategories", this.science);
-  }
+  },
+  prev() {
+    this.$refs.myCarousel.prev();
+  },
+  next() {
+    this.$refs.myCarousel.next();
+  },
 };
 </script>
+
+<style>
+.slide-img-top{
+    width: 100%;
+  height: 100vh;
+}
+</style>

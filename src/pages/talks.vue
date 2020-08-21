@@ -7,12 +7,12 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Create Article</h2>
+          <h2>Create Media</h2>
           <ol>
             <li>
               <a href="/home">Home</a>
             </li>
-            <li>Article</li>
+            <li>Media</li>
           </ol>
         </div>
       </div>
@@ -28,10 +28,10 @@
     <section id="team">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
             <form @submit.prevent="sendFile" enctype="multipart/form-data">
               <div class="form-group col-md-12">
-                <label for="exampleInputEmail">Article Title</label>
+                <label for="exampleInputEmail">Media Title</label>
                 <input
                   type="Text"
                   class="form-control"
@@ -42,7 +42,7 @@
                 />
               </div>
               <div class="form-group col-md-12">
-                <label for="inputTitle">Article Category</label>
+                <label for="inputTitle">Media Category</label>
                 <select class="form-group col-md-12" v-model="categories">
                   <option value="science">Science</option>
                   <option value="technology">Technology</option>
@@ -55,7 +55,7 @@
                 </select>
               </div>
               <div class="form-group col-md-12">
-                <label for="inputTitle">Article Section</label>
+                <label for="inputTitle">Media Section</label>
                 <select class="form-group col-md-12" v-model="section">
                   <option value="single">Single</option>
                   <option value="series">Series</option>
@@ -69,17 +69,9 @@
                   class="form-control"
                   name="exampleInputPassword1"
                   id="exampleInputPassword1"
-                  placeholder="Enter key words Design"
+                  placeholder="Enter key words"
                   v-model="tags"
                 />
-              </div>
-              <div class="form-group col-md-12">
-                <label for="inputTitle">Article type</label>
-                <select class="form-group col-md-12" v-model="type">
-                  <option value="marine Designs">Audio</option>
-                  <option value="mechanical Designs">video</option>
-                  <option value="Electrical Designs">Script</option>
-                </select>
               </div>
               <div class="form-group col-md-12">
                 <label for="exampleInputPassword2">Intro</label>
@@ -88,42 +80,42 @@
                   class="form-control"
                   name="exampleInputPassword2"
                   id="exampleInputPassword2"
-                  placeholder="List materials available for download"
+                  placeholder="Write Captivating Intro about media"
                   v-model="intro"
                 />
               </div>
             </form>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
             <h3>Please Note</h3>
-            <p>Downloadable materials should carry a list of every material available to the buyer on purchase, it is neccessary that these materials are stated clearly to avoid negative reviews from unsatisfied customers.</p>
-            <p>Tags are keywords which users will use to search for products in any category of their choice, it is essential that you fill out tag area properly to optimize SEO. Tags should be seperated with a comma.</p>
-            <p>Introduce your product to prospective buyers in no more than 8 words, the use of keywords should be optimized.</p>Design Feature should contain r ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+            <p>The Media Title field should contain the title of the media. The Media title should be brief and should contain not more than eighteen words, Media title can be written in uppercase or lowercase but must be alphabets.</p>
+            <p>Media category should contain the category which you feel best fits the media to be published, to allow easy search from other users. To fill the Media category section, click on the drop-down to select a category which you think best fits this media.</p>
+            <p>The Media section is important, to determine if Media is a series, or a single media. It is expected the user fills this section before submitting form.</p>
+            The tag section helps users in searching for your media, please fill accordingly. The intro section should contain a brief introduction about your media. Tell us briefly with no more than sixty words and not less than fifty words, about your Media.
+            The intro section should be filled properly, well indented and captivating as this would captivate the readers mind to read more. Media should be well edited before posting them, as when published medias can only be deleted and not edited.
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <form @submit.prevent="sendFile" enctype="multipart/form-data">
+      <div class="col-lg-12">
+          <form @submit.prevent="sendFile" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-lg-6">
               <br />
-              <div class="page-title">
-                <h3 class="breadcrumb-header">File Upload</h3>
-              </div>
-              <div id="services">
-                <div class="icon-box iconbox-blue">
-                  <div class="col-md-9">
-                    <div class="panel panel-white"></div>
-                  </div>
-                </div>
-              </div>
-              <label for="file" class>upload file</label>
+              <label for="file" class>Choose File to upload</label>
               <input type="file" ref="file" @change="selectFile" />
-              <button class="btn btn-primary">send</button>
-            </form>
+            </div>
+            <div class="col-lg-6 uploadbtn">
+              <br/>
+              <button class="btn btn-warning" >
+                <i class="icofont-download"></i>
+                Publish Media
+              </button>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <p>Drop zone</p>
-          </div>
+          </form>
         </div>
+        <br/><br/>
+        <p class="font-italic">We will not fail to remove any media that does not adhere to our core pillars and aims.
+          Every media that does not follow this guide stated above shall be removed.</p>
       </div>
     </section>
   </main>
@@ -133,6 +125,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import axios from "axios";
 import Headers from "../components/Headers";
 import footers from "../components/footers";
@@ -149,7 +142,8 @@ export default {
       type: "",
       intro: "",
       file: "",
-      section: ""
+      section: "",
+      errors: ""
     };
   },
   methods: {
@@ -172,7 +166,7 @@ export default {
         formData.append("type", this.type);
         formData.append("intro", this.intro);
         formData.append("section", this.section);
-        await axios.post("https://ugochimyapp.herokuapp.com/talks", formData, {
+        await axios.post("https://ugochimyapp.herokuapp.com/", formData, {
           params: {
             user: this.$store.state.user,
             username: this.$store.state.name

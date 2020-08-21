@@ -5,34 +5,51 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
-          <img src="../assets/img/clients/client-1.png" class="img-fluid" alt />
+          <b-carousel>
+          <b-carousel-slide img-src="../assets/img/clients/client-1.png" class="img-fluid" alt />
+           <b-carousel-slide img-src="../assets/img/clients/client-1.png" class="img-fluid" alt />
+        </b-carousel>
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
-          <img src="../assets/img/clients/client-2.png" class="img-fluid" alt />
+          <b-carousel>
+          <b-carousel-slide img-src="../assets/img/clients/client-2.png" class="img-fluid" alt />
+           <b-carousel-slide img-src="../assets/img/clients/client-2.png" class="img-fluid" alt />
+        </b-carousel>
+        </div>
+        
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
+          <b-carousel>
+          <b-carousel-slide img-src="../assets/img/clients/client-3.png" class="img-fluid" alt />
+           <b-carousel-slide img-src="../assets/img/clients/client-3.png" class="img-fluid" alt />
+        </b-carousel>
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
-          <img src="../assets/img/clients/client-3.png" class="img-fluid" alt />
+          <b-carousel>
+          <b-carousel-slide img-src="../assets/img/clients/client-4.png" class="img-fluid" alt />
+           <b-carousel-slide img-src="../assets/img/clients/client-4.png" class="img-fluid" alt />
+        </b-carousel>
+        </div>
+        
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
+          <b-carousel>
+          <b-carousel-slide img-src="../assets/img/clients/client-5.png" class="img-fluid" alt />
+           <b-carousel-slide img-src="../assets/img/clients/client-5.png" class="img-fluid" alt />
+          </b-carousel>
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
-          <img src="../assets/img/clients/client-4.png" class="img-fluid" alt />
-        </div>
-
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
-          <img src="../assets/img/clients/client-5.png" class="img-fluid" alt />
-        </div>
-
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
-          <img src="../assets/img/clients/client-6.png" class="img-fluid" alt />
+         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-4 d-flex align-items-center justify-content-center">
+          <b-carousel>
+          <b-carousel-slide img-src="../assets/img/clients/client-6.png" class="img-fluid" alt />
+           <b-carousel-slide img-src="../assets/img/clients/client-6.png" class="img-fluid" alt />
+          </b-carousel>
         </div>
       </div>
     </div>
   </section>
   <!-- End Clients Section -->
     <!-- ======= Footer ======= -->
-    
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -54,7 +71,6 @@
               <strong>Email:</strong> TLN@example.com
               <br />
               <p>
-              
               <a href="#" class="twitter">
           <i class="bx bxl-twitter"></i>
         </a>
@@ -90,38 +106,37 @@
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Terms of service</a>
+                <a href="/terms">Terms of service</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Privacy policy</a>
+                <a href="/terms">Privacy policy</a>
               </li>
             </ul>
           </div>
-          
 
           <div class="col-lg-3 col-md-3 col-sm-3 col-3  footer-links">
             <h4>About Us</h4>
             <ul>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Mentoring</a>
+                <a href="">Mentoring</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Capital Development</a>
+                <a href="">Capital Development</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Human Development</a>
+                <a href="">Human Development</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Leadership</a>
+                <a href="">Leadership</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Tech Development</a>
+                <a href="">Tech Development</a>
               </li>
             </ul>
           </div>

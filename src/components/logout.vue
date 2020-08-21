@@ -1,6 +1,9 @@
-<template></template>
+<template>
+  <div></div>
+</template>
 
 <script>
+/* eslint-disable */
 export default {
   created() {
     this.$store.dispatch("destroyToken").then(response => {

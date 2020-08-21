@@ -1,9 +1,10 @@
+/* eslint-disable */
 import axios from 'axios'
 
 export const destroyToken = (context) => {
   if (context.getters.loggedIn) {
     return new Promise((resolve, reject) => {
-      axios.post('/')
+      axios.post('https://ugochimyapp.herokuapp.com/users/login')
         .then(response => {
           localStorage.removeItem('data')
           context.commit('destroyToken')
@@ -126,5 +127,19 @@ export const getSection = ({ commit }, section) => {
   axios.get(`https://ugochimyapp.herokuapp.com/articles/section/${section}`)
     .then(response => {
       commit('SET_SECTION', response.data)
+    })
+}
+
+export const getNanms = ({ commit }) => {
+  axios.get('https://ugochimyapp.herokuapp.com/nanmsid')
+    .then(response => {
+      commit('SET_NANMS', response.data)
+    })
+}
+
+export const getCourse = ({ commit }) => {
+  axios.get('https://ugochimyapp.herokuapp.com/course')
+    .then(response => {
+      commit('SET_COURSE', response.data)
     })
 }

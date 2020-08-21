@@ -68,7 +68,7 @@
 
                     <blockquote>
                       <i class="icofont-quote-left quote-left"></i>
-                      <p>Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.</p>
+                      <p>{{article.intro}}</p>
                       <i class="las la-quote-right quote-right"></i>
                       <i class="icofont-quote-right quote-right"></i>
                     </blockquote>
@@ -96,12 +96,6 @@
 
                   <div class="entry-footer clearfix">
                     <div class="float-left">
-                      <i class="icofont-folder"></i>
-                      <ul class="cats">
-                        <li>
-                          <a href="#">Business</a>
-                        </li>
-                      </ul>
 
                       <i class="icofont-tags"></i>
                       <ul class="tags">
@@ -229,6 +223,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import Headers from "../components/Headers";
 import footers from "../components/footers";
 import bl from "../components/bl"

@@ -1,4 +1,3 @@
-/* eslint-disable 
 <template>
   <b-row class="justify-content-center">
     <b-col cols="12" md="8" lg="6">
@@ -39,8 +38,8 @@
 </template>
 
 <script>
+/* eslint-disable */
 import axios from "axios";
-import validations from "@/utils/validations";
 
 export default {
   name: "Login",
@@ -49,7 +48,6 @@ export default {
       email: "",
       password: "",
       errors: [],
-      ...validations
     };
   },
   methods: {
