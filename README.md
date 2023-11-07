@@ -4,9 +4,7 @@
 
 ## Getting Started
 To build and run TLN locally, just follow the instructions bellow. You can run it directly using NPM run commands. The web server will show the hostname on the console, something like this:
-```
-stop-analyzing-embed | Listening on http://localhost:8080.
-```
+
 
 ## Using a Development Environment
 
